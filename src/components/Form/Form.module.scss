@@ -1,0 +1,84 @@
+.section {
+  background-size: cover;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 0 auto;
+}
+
+.form {
+  position: relative;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  background-image: url("../../assets/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #3b3054;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media (min-width: 767px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url("../../assets/bg-shorten-desktop.svg");
+    padding: 2.5rem 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    background-color: #29c7c7;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: ease-in-out 350ms;
+    padding: 1rem;
+    &:hover {
+      background-color: #21afaf;
+    }
+    @media (min-width: 1200px) {
+      width: 25%;
+    }
+    @media (min-width: 767px) {
+      width: 50%;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.input {
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  line-height: 1.5;
+  font-size: 1rem;
+
+  @media (min-width: 767px) {
+    flex-grow: 1;
+    line-height: 2.5;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  &[disabled] {
+    background-color: #bfbfbf;
+  }
+}
+
+.error {
+  position: absolute;
+  left: 2rem;
+  bottom: 0.5rem;
+  color: #ee3939;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
