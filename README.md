@@ -6,6 +6,6 @@
 - Can be shorten any valid url.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
-Demo. [https://react-todo-dndqqozy8-edjalilov.vercel.app/](https://react-todo-dndqqozy8-edjalilov.vercel.app/)
+Demo. [https://react-shortener-rdkjquw22-edjalilov.vercel.app/](https://react-shortener-rdkjquw22-edjalilov.vercel.app/)
 
 ![preview img](/preview.png)
